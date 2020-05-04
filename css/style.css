@@ -1,28 +1,99 @@
+/***********************************************/
+/***************** tekst ***********************/
+
+/*Jeg bruger font-face til at finde fontén på computeren*/
 @font-face {
-    font-family: 'gill-sans';
-    src: url('/fonts/gills_sv/GillSans-Light.ttf')
+    font-family: "gill-sans";
+    src: url("/fonts/gills_sv/GillSans-Light.ttf");
+}
+/*Jeg giver en font til h1, h2 og h3*/
+h1,
+h2,
+h3 {
+    font-family: "Baskervville", serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Baskervville', serif;
-}
-
+/*Jeg giver en font til body*/
 body {
-    font-family: 'gill-sans', sans-serif;
+    font-family: "gill-sans", sans-serif;
+    margin: 0;
 }
 
+/***********************************************/
+/***************** mobil nav *******************/
+
+/*Jeg bruger flex til at bestemme retningen for min navbar og centerer den derefter*/
 #menu {
+    /* placering af menu (Gør så vi kan placere navbaren i forhold til browser)*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    background-color: white;
     padding-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* vi løfter menuen over andet content*/
+    z-index: 5;
+    /* menubaren animeres ind*/
+    transition: left 0.3s linear;
 }
-#closeNav {
-    position: absolute;
-    right: 20px;
-    top: 20px;
+
+/*Denne style bliver brugt når der er #menu i url'en. Det bruger vi til at vise navbaren, når vi trykker på "åben navbar" ikonet*/
+#menu:target {
+    left: 0;
+}
+
+/*Jeg fjerner punkterne fra listen*/
+#menuPunkter {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    color: #f2cbd9;
     text-decoration: none;
+    /*Flex bruges til at ligge links under hinanden og centere dem*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/*Jeg adskiller mine menupunkter lidt*/
+#menuPunkter a {
+    font-size: 25px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    /*Jeg fjerner stregen og ændre farven*/
+    color: #f2cbd9;
+    text-decoration: none;
+    text-shadow: 0px 1px 6px #0000001d;
+}
+
+/***********************************************/
+/************ mobil nav knapper ****************/
+
+#closeNav,
+#openNav {
+    /*Gør så vi kan placere krydset i navbaren som vi vil*/
+    position: absolute;
+    top: 40px;
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+}
+
+/*knapper til åben og luk af navbar*/
+#closeNav {
+    right: 40px;
+}
+#openNav {
+    left: 40px;
+}
+
+/***********************************************/
+/************ mobil nav logo *******************/
 
 /*logoet i navbaren*/
 #logo {
@@ -30,25 +101,32 @@ body {
     display: block;
 }
 
+/*Jeg giver logoet 100% af forældrens 60%*/
 #logo img {
     width: 100%;
 }
-/*Jeg fjerner punkterne fra listen*/
-#menuPunkter {
-    list-style: none;
-    padding: 0;
-    margin-top: 30px;
-    /*Jeg fjerner stregen og ændre farven*/
-    color: #F2CBD9;
-    text-decoration: none;
+
+/***********************************************/
+/*************** mobil topbar ******************/
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 20px;
 }
 
-/*Jeg adskiller mine menupunkter lidt*/
-#menuPunkter a {
-    font-size: 17px;
-    
-    margin: 10px;
-    padding: 10px;
+/*Tilpasning af logo i toppen på mobil*/
+#logoTop {
+    /*Fordi der er et link sætter vi display block for at kunne bruge margin og width*/
+    display: block;
+    width: 40%;
+    background-color: white;
 }
 
-/*Jeg fjerner stregen og ændre farven*/
+#logoTop img {
+    width: 100%;
+}
+
+
+
