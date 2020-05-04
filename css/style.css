@@ -11,4 +11,44 @@ body {
     font-family: 'gill-sans', sans-serif;
 }
 
-p {g}
+#menu {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#closeNav {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-decoration: none;
+}
+
+/*logoet i navbaren*/
+#logo {
+    width: 60%;
+    display: block;
+}
+
+#logo img {
+    width: 100%;
+}
+/*Jeg fjerner punkterne fra listen*/
+#menuPunkter {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    /*Jeg fjerner stregen og ændre farven*/
+    color: #F2CBD9;
+    text-decoration: none;
+}
+
+/*Jeg adskiller mine menupunkter lidt*/
+#menuPunkter a {
+    font-size: 17px;
+    
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Jeg fjerner stregen og ændre farven*/
