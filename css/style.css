@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'gill-sans';
+    src: url('/fonts/gills_sv/GillSans-Light.ttf')
+}
+
+h1, h2, h3 {
+    font-family: 'Baskervville', serif;
+}
+
+body {
+    font-family: 'gill-sans', sans-serif;
+}
