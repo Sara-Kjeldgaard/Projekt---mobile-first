@@ -13,6 +13,15 @@ h3 {
     font-family: "Baskervville", serif;
 }
 
+/*h1 er til banneret på hver side*/
+h1 {
+    background-color: rgba(242, 203, 217, 0.6);
+    width: 100%;
+    text-align: center; /*Centerer teksten*/
+    padding: 15px;
+    margin: 0;
+}
+
 /*Jeg giver en font til body*/
 body {
     font-family: "gill-sans", sans-serif;
@@ -34,6 +43,10 @@ body {
 
 main {
     flex: 1;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /***********************************************/
@@ -131,15 +144,17 @@ header {
     display: flex;
     justify-content: center;
     background-color: white;
-    padding-bottom: 20px;
+    
 }
 
 /*Tilpasning af logo i toppen på mobil*/
 #logoTop {
     /*Fordi der er et link sætter vi display block for at kunne bruge margin og width*/
     display: block;
-    width: 40%;
+    width: 45%;
     background-color: white;
+    max-width: 200px;
+    padding: 10px;
 }
 
 #logoTop img {
@@ -147,7 +162,7 @@ header {
 }
 
 /***********************************************/
-/************ stylesheet for Contact *******************/
+/********* stylesheet for Contact **************/
 
 input[type="text"],
 select,
@@ -186,23 +201,19 @@ textarea {
     width: 80%;
 }
 label {
-    font-family: "gill-sans", sans-serif;
     color: black;
-}
-/* Her er til contact*/
-h1 {
-    background-color: #f2cbd9;
-    width: 100%;
-    text-align: center; /*Centerer teksten*/
-    padding: 15px;
-    opacity: 50%;
-}
-* {
-    box-sizing: border-box;
 }
 
 /***********************************************/
 /************ mobil Landingpage ****************/
+
+#landingHeader {
+    height: 115px;
+}
+
+#landingHeader #logoTop {
+    position: absolute;
+}
 
 #landingMain {
     background-image: url(/images/mobilForside.JPG);
@@ -218,15 +229,34 @@ h1 {
     align-items: center;
     height: 100%;
     justify-content: space-around;
+    padding: 10% 0;
+}
+
+#landingMain .subpages a {
+    background-color: rgba(188, 206, 216, 0.7);
+    width: 80%;
+    padding: 15px;
+    font-family: "Baskervville", serif;
+    text-decoration: none;
+    font-size: 25px;
+    color:black;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #F2CBD9;
 }
 
 /***********************************************/
-/************ stylesheet for footer *******************/
+/********** stylesheet for About ***************/
+
+
+
+
+/***********************************************/
+/********** stylesheet for footer **************/
 .footer {
-    background-color: #bcced8;
+    background-color: rgba(188, 206, 216, 0.7);
     padding: 10px;
     text-align: left;
     background-size: 100%;
     justify-content: center;
-    opacity: 60%;
 }
