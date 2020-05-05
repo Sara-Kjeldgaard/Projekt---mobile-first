@@ -158,6 +158,7 @@ input[type=text], select, textarea {
   border-radius: 4px;
   cursor: pointer;
 margin-bottom: 10px;
+    opacity: 60%;
 }
 /* */
 #form{
@@ -176,6 +177,7 @@ h1{
     width: 100%;
     text-align: center;/*Centerer teksten*/
     padding: 15px;
+    opacity: 50%;
 }
 * {
   box-sizing: border-box;
@@ -200,6 +202,7 @@ font-family: "gill-sans", sans-serif;
     text-align: left;
     background-size: 100%;
 justify-content: center;
+    opacity: 60%;
 }
 /***********************************************/
 /************ stylesheet for footer *******************/
