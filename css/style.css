@@ -329,3 +329,31 @@ p {
         display: none;
     }
 }
+
+
+
+/*styleshet for shop*/
+
+#div1 {
+    width: 33px;
+    height: 33px;
+    border: solid; 
+    margin-left: 33px;
+    margin-right: 33px;    
+    background-image:url(shop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+    
+
+#div2 {
+    width: 500px;
+    height: 500px;
+    border: solid; 
+    margin-left: auto;
+    margin-right: auto;    
+
+}
+
+
