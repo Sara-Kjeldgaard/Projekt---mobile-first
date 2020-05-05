@@ -128,8 +128,8 @@ header {
     width: 100%;
 }
 
-
-/* Stylesheet for Contact */ 
+/***********************************************/
+/************ stylesheet for Contact *******************/
 
 input[type=text], select, textarea {
   width: 100%; 
@@ -150,20 +150,33 @@ input[type=text], select, textarea {
     align-items: center;
 }
 /* Style the submit button with a specific background color etc */
-input[type=emne] {
+#contactButton {
   background-color: #bcced8;
   color: black;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+margin-bottom: 10px;
 }
-
+/* */
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
 label {
     font-family: "gill-sans", sans-serif;
     color: black; 
 }
-
+/* Her er til contact*/
+h1{
+ background-color: #F2CBD9;
+    width: 100%;
+    text-align: center;/*Centerer teksten*/
+    padding: 15px;
+}
 * {
   box-sizing: border-box;
 }
@@ -174,7 +187,12 @@ label {
   padding: 5px;
 }
 
-/* Style the footer */
+/***********************************************/
+/************ stylesheet for Contact *******************/
+
+
+/***********************************************/
+/************ stylesheet for footer *******************/
 .footer {
   background-color: #bcced8;
   padding: 10px;
@@ -183,3 +201,5 @@ font-family: "gill-sans", sans-serif;
     background-size: 100%;
 justify-content: center;
 }
+/***********************************************/
+/************ stylesheet for footer *******************/
