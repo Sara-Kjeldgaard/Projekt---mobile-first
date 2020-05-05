@@ -249,7 +249,7 @@ label {
 }
 /***********************************************/
 /********** stylesheet for gallery **************/
-.gallery{
+.gallery {
     height: 100%;
     width: auto;
 }
@@ -261,7 +261,6 @@ label {
     display: flex;
     flex-direction: column;
 }
-
 
 #aboutBackground {
     background-image: url(/images/about.JPG);
@@ -308,7 +307,7 @@ label {
     align-items: center;
 }
 .icons {
-    width: 33%;
+    width: 60px;
     display: block;
 }
 .icons img {
@@ -317,4 +316,16 @@ label {
 p {
     margin: 5px;
     font-size: 14px;
+}
+/*Herunder benytter vi os af mediaquery til at lave tablet styles*/
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1200px) {
+    #closeNav,
+    #openNav,
+    #logo {
+        /*Disse funktioner vil vi ikke vise*/
+        display: none;
+    }
 }
