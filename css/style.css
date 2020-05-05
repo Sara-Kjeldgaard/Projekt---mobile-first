@@ -255,6 +255,8 @@ label {
     display: flex;
     flex-direction: column;
 }
+/***********************************************/
+/********** stylesheet for gallery **************/
 
 #aboutBackground {
     background-image: url(/images/about.JPG);
@@ -265,6 +267,10 @@ label {
     justify-content: center;
     align-items: center;
     padding: 40px 0;
+}
+.gallery{
+    height: 100%;
+    width: auto;
 }
 
 #textAbout {
