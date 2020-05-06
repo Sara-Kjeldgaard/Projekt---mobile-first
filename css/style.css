@@ -334,7 +334,7 @@ label {
 /********** stylesheet for footer **************/
 .footer {
     background-color: rgba(188, 206, 216, 0.7);
-    padding: 10px 30px;
+    padding: 10px 20px;
     text-align: left;
     background-size: 100%;
     justify-content: space-between;
@@ -348,12 +348,12 @@ label {
 
 #socialmedie {
     display: flex;
-    width: 40%;
     align-items: center;
 }
 .icons {
-    width: 60px;
+    width: 40px;
     display: block;
+    margin-left: 10px;
 }
 .icons img {
     width: 100%;
@@ -444,6 +444,11 @@ p {
     #landingMain .subpages a {
         width: 100%;
     }
+
+    .footer {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
 }
 
 /***********************************************/
@@ -516,11 +521,11 @@ p {
     #aboutBackground {
         background-image: none;
         justify-content: space-around;
-         align-items: flex-start;
+        align-items: flex-start;
         max-width: 1200px;
         width: 70%;
     }
-    
+
     #aboutMain {
         align-items: center;
     }
@@ -564,5 +569,8 @@ p {
     #landingMain .subpages a {
         width: 60%;
         margin-top: 300px;
+    }
+
+    #form {
     }
 }
