@@ -239,6 +239,13 @@ label {
     padding: 10% 0;
 }
 
+#landingMain .subpage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #landingMain .subpages a {
     /*Der ligges en baggrundsfarve på vores a tags og de styles*/
     background-color: rgba(188, 206, 216, 0.7);
@@ -251,10 +258,6 @@ label {
     display: flex;
     justify-content: center;
     border: 1px solid #f2cbd9;
-}
-
-#landingMain .subpages.desktop {
-    display: none;
 }
 
 /***********************************************/
@@ -275,7 +278,9 @@ label {
     justify-content: center;
 }
 
-#gallery1 img, #gallery2 img, #gallery3 img{
+#gallery1 img,
+#gallery2 img,
+#gallery3 img {
     width: 100%;
 }
 
@@ -407,18 +412,37 @@ p {
 /***********************************************/
 /********* mediaquery til tablet ***************/
 
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (min-width: 700px) {
     /*Vi tilpasser gallery til tablet*/
     .gallery {
         padding: 80px;
         max-width: 1200px;
-          }
-    
-     #gallery1,
+    }
+
+    #gallery1,
     #gallery2 {
         display: flex;
         width: 40%;
+    }
+    /*Vi tilpasser landingpage til tablet*/
+    #landingMain .subpages {
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    #landingMain .subpage {
+        width: 40%;
+        margin: 20px;
+    }
+
+    #landingMain .subpage:last-child {
+        width: 90%;
+    }
+
+    #landingMain .subpages a {
+        width: 100%;
     }
 }
 
@@ -426,6 +450,7 @@ p {
 /********* mediaquery til web ******************/
 
 @media only screen and (min-width: 1200px) {
+    /*Vi tilpasser naven til tablet*/
     #closeNav,
     #openNav,
     #logo,
@@ -457,19 +482,12 @@ p {
     #menuPunkter a {
         color: black;
     }
-
-    #landingMain .subpages.mobil {
-        display: none;
-    }
-
-    #landingMain .subpages.desktop {
-        display: block;
-    }
+    /*Vi tilpasser footer til tablet*/
 
     #socialmedie {
         padding-left: 250px;
     }
-    
+
     /*Vi tilpasser gallery til web*/
     #galleryMain {
         display: flex;
@@ -479,7 +497,6 @@ p {
     .gallery {
         padding: 80px;
         max-width: 1200px;
-            
     }
     #gallery1,
     #gallery2,
@@ -487,24 +504,61 @@ p {
         display: flex;
         width: 30%;
     }
-    
-    .subpages.desktop {
-    display: 
-}
-    #aboutImage{
-    display: block;
+    /*Vi tilpasser about til tablet*/
+    #aboutImage {
+        display: block;
         width: 500px;
-    
     }
-    
+
     #textAbout {
         width: 400px;
     }
-    
-   
-        
+
     #aboutBackground {
-    background-image: none;
-    justify-content: space-around;
+        background-image: none;
+        justify-content: space-around;
+    }
+
+    /*Vi tilpasser landingpage til tablet*/
+    #landingMain {
+        background-image: none;
+    }
+    
+    #landingMain .subpages {
+      flex-wrap: nowrap;
+        padding: 0;
+        
+    }
+
+     #landingMain .subpage:hover {
+       filter: brightness(80%);
+        
+    }
+
+    #landingMain .subpage,  #landingMain .subpage:last-child {
+        flex: 1;
+        height: 100%;
+        margin: 0;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.2s linear;
+    }
+    
+    #landing1 {
+        background-image: url(/images/forside1.JPG);
+    }
+    
+     #landing2 {
+        background-image: url(/images/mobilForside.JPG);
+    }
+    
+     #landing3 {
+        background-image: url(/images/Landing3.png);
+    }
+    
+    
+    #landingMain .subpages a {
+        width: 60%;
+        margin-top: 300px;
     }
 }
