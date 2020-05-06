@@ -260,19 +260,34 @@ label {
 /***********************************************/
 /********** stylesheet for gallery **************/
 
-#gallery {
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#gallery1,
+#gallery2,
+#gallery3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
-#gallery1 img {
+#gallery1 img, #gallery2 img, #gallery3 img{
     width: 100%;
 }
-#gallery1
 
-#gallery2 #gallery3 {
+#gallery1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery2,
+#gallery3 {
     display: none;
 }
 /***********************************************/
@@ -434,11 +449,24 @@ p {
     #landingMain .subpages.desktop {
         display: block;
     }
-    
+
     #socialmedie {
-    padding-left: 250px;
-}
-    #gallery2 #gallery3 {
-    display: block;
-}
+        padding-left: 250px;
+    }
+    #galleryMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery {
+        padding: 80px;
+        max-width: 1200px;
+            
+    }
+    #gallery1,
+    #gallery2,
+    #gallery3 {
+        display: flex;
+        width: 30%;
+    }
 }
