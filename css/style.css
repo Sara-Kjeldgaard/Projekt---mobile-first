@@ -147,7 +147,8 @@ header {
 }
 
 /*Tilpasning af logo i toppen på mobil*/
-#logoTop {
+#logoTop,
+#logoTopDesktop {
     /*Fordi der er et link sætter vi display block for at kunne bruge margin og width*/
     display: block;
     width: 45%;
@@ -156,8 +157,13 @@ header {
     padding: 10px;
 }
 
-#logoTop img {
+#logoTop img,
+#logoTopDesktop img {
     width: 100%;
+}
+
+#menuPunkter a#logoTopDesktop {
+    display: none;
 }
 
 /***********************************************/
@@ -246,6 +252,11 @@ label {
     justify-content: center;
     border: 1px solid #f2cbd9;
 }
+
+#landingMain .subpages.desktop {
+    display: none;
+}
+
 /***********************************************/
 /********** stylesheet for gallery **************/
 
@@ -256,8 +267,8 @@ label {
     justify-content: center; 
 }
 
-#gallery img{
-    width: 100%; 
+#gallery img {
+    width: 100%;
 }
 
 /***********************************************/
@@ -327,11 +338,9 @@ p {
 /***********************************************/
 /********** stylesheet for shop ****************/
 
-#shopmain{
+#shopmain {
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 #shopbaggrund {
@@ -343,34 +352,29 @@ p {
     justify-content: center;
     align-items: center;
     padding: 40px 0;
-    
 }
-    
-    
+
 #shopbaggrund p {
-    font-size: 18px; 
-    padding: 30px 10px; 
-    
+    font-size: 18px;
+    padding: 30px 10px;
 }
 
-#contactbottom{
-    background-color: rgba(188, 206, 216,1.0);
-    border-radius: 30px; 
-    font-size: 20px; 
-    padding: 5px 10px; 
-    margin-bottom: 20px; 
-    text-decoration: none; 
-    color: black; 
-    
+#contactbottom {
+    background-color: rgba(188, 206, 216, 1);
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
 }
-
 
 #div2 {
     background-color: rgba(188, 206, 216, 0.7);
     width: 90%;
     font-size: 25px;
     border: 1px solid #f2cbd9;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -381,7 +385,6 @@ p {
 /********* mediaquery til tablet ***************/
 
 @media only screen and (min-width: 768px) {
-
 }
 
 /***********************************************/
@@ -390,10 +393,41 @@ p {
 @media only screen and (min-width: 1200px) {
     #closeNav,
     #openNav,
-    #logo {
+    #logo,
+    #logoTop {
         /*Disse funktioner vil vi ikke vise*/
         display: none;
     }
+
+    #menuPunkter a#logoTopDesktop {
+        display: block;
+    }
+
+    #menu {
+        position: relative;
+        left: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    #menuPunkter {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    #menuPunkter a {
+        color: black;
+    }
+
+    #landingMain .subpages.mobil {
+        display: none;
+    }
+
+    #landingMain .subpages.desktop {
+        display: block;
+    }
 }
-
-
