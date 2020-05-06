@@ -319,6 +319,7 @@ p {
 }
 /*Herunder benytter vi os af mediaquery til at lave tablet styles*/
 @media only screen and (min-width: 768px) {
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -332,7 +333,8 @@ p {
 
 
 
-/*styleshet for shop*/
+/***********************************************/
+/********** stylesheet for shop ****************/
 
 #contactbaggrund {
     background-image: url(/images/shop.JPG);
