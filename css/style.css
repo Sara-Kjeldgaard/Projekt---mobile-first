@@ -249,9 +249,18 @@ label {
 }
 /***********************************************/
 /********** stylesheet for gallery **************/
-.gallery {
-    height: 1px;;
-    width: auto;
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    
+
+}
+
+#gallery img{
+    width: 100%; 
 }
 
 /***********************************************/
