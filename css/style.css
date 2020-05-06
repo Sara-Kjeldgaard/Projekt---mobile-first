@@ -250,7 +250,7 @@ label {
 /***********************************************/
 /********** stylesheet for gallery **************/
 .gallery {
-    height: 100%;
+    height: 1px;;
     width: auto;
 }
 
