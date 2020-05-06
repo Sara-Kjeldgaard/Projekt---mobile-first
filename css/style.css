@@ -336,7 +336,14 @@ p {
 /***********************************************/
 /********** stylesheet for shop ****************/
 
-#contactbaggrund {
+#shopmain{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#shopbaggrund {
     background-image: url(/images/shop.JPG);
     background-size: cover;
     background-position: center;
@@ -349,12 +356,34 @@ p {
 }
     
     
+#shopbaggrund p {
+    font-size: 18px; 
+    padding: 30px 10px; 
+    
+}
+
+#contactbottom{
+    background-color: rgba(188, 206, 216,1.0);
+    border-radius: 30px; 
+    font-size: 20px; 
+    padding: 5px 10px; 
+    margin-bottom: 20px; 
+    text-decoration: none; 
+    color: black; 
+    
+}
+
 
 #div2 {
     background-color: rgba(188, 206, 216, 0.7);
-    width: 75%;
+    width: 90%;
     font-size: 25px;
     border: 1px solid #f2cbd9;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
 }
 
 
