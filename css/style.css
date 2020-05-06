@@ -309,6 +309,10 @@ label {
     padding: 40px 0;
 }
 
+#aboutImage {
+    display: none;
+}
+
 #textAbout {
     background-color: rgba(188, 206, 216, 0.7);
     width: 75%;
@@ -404,6 +408,18 @@ p {
 /********* mediaquery til tablet ***************/
 
 @media only screen and (min-width: 768px) {
+    
+    /*Vi tilpasser gallery til tablet*/
+    .gallery {
+        padding: 80px;
+        max-width: 1200px;
+          }
+    
+     #gallery1,
+    #gallery2 {
+        display: flex;
+        width: 40%;
+    }
 }
 
 /***********************************************/
@@ -453,6 +469,8 @@ p {
     #socialmedie {
         padding-left: 250px;
     }
+    
+    /*Vi tilpasser gallery til web*/
     #galleryMain {
         display: flex;
         flex-direction: column;
@@ -468,5 +486,25 @@ p {
     #gallery3 {
         display: flex;
         width: 30%;
+    }
+    
+    .subpages.desktop {
+    display: 
+}
+    #aboutImage{
+    display: block;
+        width: 500px;
+    
+    }
+    
+    #textAbout {
+        width: 400px;
+    }
+    
+   
+        
+    #aboutBackground {
+    background-image: none;
+    justify-content: space-around;
     }
 }
