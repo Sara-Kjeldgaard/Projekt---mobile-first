@@ -249,10 +249,18 @@ label {
 }
 /***********************************************/
 /********** stylesheet for gallery **************/
-.gallery {
-    max-width: 100%;
-    height: auto;
 
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    
+
+}
+
+#gallery img{
+    width: 100%; 
 }
 
 /***********************************************/
