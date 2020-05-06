@@ -267,10 +267,14 @@ label {
     justify-content: center; 
 }
 
-#gallery img {
+#gallery1 img {
     width: 100%;
 }
+#gallery1
 
+#gallery2 #gallery3 {
+    display: none;
+}
 /***********************************************/
 /********** stylesheet for About ***************/
 
@@ -430,4 +434,11 @@ p {
     #landingMain .subpages.desktop {
         display: block;
     }
+    
+    #socialmedie {
+    padding-left: 250px;
+}
+    #gallery2 #gallery3 {
+    display: block;
+}
 }
