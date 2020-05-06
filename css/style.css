@@ -574,3 +574,26 @@ p {
     #form {
     }
 }
+
+/*vi tilpasser shop til */
+
+ #shopimage {
+        display: block;
+        width: 40%;
+    }
+    
+#div {
+    
+}
+
+    #shopBackground {
+        background-image: none;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-width: 1200px;
+        width: 70%;
+    }
+
+    #shopmain {
+        align-items: center;
+    }
