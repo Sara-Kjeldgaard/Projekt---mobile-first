@@ -184,7 +184,7 @@ textarea {
 }
 /* Style the submit button with a specific background color etc */
 #contactButton {
-    background-color: rgba(242, 203, 217, 0.6);
+    background-color: rgba(188, 206, 216, 0.7);
     color: black;
     padding: 12px 20px;
     border: none;
@@ -250,8 +250,9 @@ label {
 /***********************************************/
 /********** stylesheet for gallery **************/
 .gallery {
-    height: 1px;;
-    width: auto;
+    max-width: 100%;
+    height: auto;
+
 }
 
 /***********************************************/
