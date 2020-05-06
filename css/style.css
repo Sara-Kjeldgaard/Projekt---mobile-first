@@ -416,7 +416,7 @@ p {
     /*Vi tilpasser gallery til tablet*/
     .gallery {
         padding: 80px;
-        max-width: 1200px;
+        align-items: flex-start;
     }
 
     #gallery1,
@@ -495,7 +495,6 @@ p {
         align-items: center;
     }
     .gallery {
-        padding: 80px;
         max-width: 1200px;
     }
     #gallery1,
@@ -507,35 +506,41 @@ p {
     /*Vi tilpasser about til tablet*/
     #aboutImage {
         display: block;
-        width: 500px;
+        width: 40%;
     }
 
     #textAbout {
-        width: 400px;
+        width: 40%;
     }
 
     #aboutBackground {
         background-image: none;
         justify-content: space-around;
+         align-items: flex-start;
+        max-width: 1200px;
+        width: 70%;
+    }
+    
+    #aboutMain {
+        align-items: center;
     }
 
     /*Vi tilpasser landingpage til tablet*/
     #landingMain {
         background-image: none;
     }
-    
+
     #landingMain .subpages {
-      flex-wrap: nowrap;
+        flex-wrap: nowrap;
         padding: 0;
-        
     }
 
-     #landingMain .subpage:hover {
-       filter: brightness(80%);
-        
+    #landingMain .subpage:hover {
+        filter: brightness(80%);
     }
 
-    #landingMain .subpage,  #landingMain .subpage:last-child {
+    #landingMain .subpage,
+    #landingMain .subpage:last-child {
         flex: 1;
         height: 100%;
         margin: 0;
@@ -543,20 +548,19 @@ p {
         background-position: center;
         transition: all 0.2s linear;
     }
-    
+
     #landing1 {
         background-image: url(/images/forside1.JPG);
     }
-    
-     #landing2 {
+
+    #landing2 {
         background-image: url(/images/mobilForside.JPG);
     }
-    
-     #landing3 {
+
+    #landing3 {
         background-image: url(/images/Landing3.png);
     }
-    
-    
+
     #landingMain .subpages a {
         width: 60%;
         margin-top: 300px;
