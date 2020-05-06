@@ -334,26 +334,25 @@ p {
 
 /*styleshet for shop*/
 
-#div1 {
-    width: 33px;
-    height: 33px;
-    border: solid; 
-    margin-left: 33px;
-    margin-right: 33px;    
-    background-image:url(shop.jpg);
-    background-repeat: no-repeat;
+#contactbaggrund {
+    background-image: url(/images/shop.JPG);
+    background-size: cover;
     background-position: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
     
+}
     
     
 
 #div2 {
-    width: 500px;
-    height: 500px;
-    border: solid; 
-    margin-left: auto;
-    margin-right: auto;    
-
+    background-color: rgba(188, 206, 216, 0.7);
+    width: 75%;
+    font-size: 25px;
+    border: 1px solid #f2cbd9;
 }
 
 
