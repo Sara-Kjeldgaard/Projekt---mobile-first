@@ -163,7 +163,7 @@ header {
     width: 100%;
 }
 
-#menuPunkter a#logoTopDesktop {
+#menuPunkter #logoTopDesktop {
     display: none;
 }
 
