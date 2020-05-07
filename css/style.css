@@ -487,7 +487,7 @@ p {
     #menuPunkter a {
         color: black;
     }
-    /*Vi tilpasser footer til tablet*/
+    /*Vi tilpasser footer til web*/
 
     #socialmedie {
         padding-left: 250px;
@@ -508,7 +508,7 @@ p {
         display: flex;
         width: 30%;
     }
-    /*Vi tilpasser about til tablet*/
+    /*Vi tilpasser about til web*/
     #aboutImage {
         display: block;
         width: 40%;
@@ -530,7 +530,7 @@ p {
         align-items: center;
     }
 
-    /*Vi tilpasser landingpage til tablet*/
+    /*Vi tilpasser landingpage til web*/
     #landingMain {
         background-image: none;
     }
@@ -575,7 +575,7 @@ p {
     }
 }
 
-/*vi tilpasser shop til */
+/*vi tilpasser shop til web*/
 
  #shopimage {
         display: block;
