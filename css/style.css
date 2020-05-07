@@ -475,8 +475,16 @@ p {
         display: none;
     }
 
-    #menuPunkter a#logoTopDesktop {
+    #menuPunkter #logoTopDesktop {
         display: block;
+        padding: 0;
+        width: 150px;
+    }
+
+    #menuPunkter #logoTopDesktop a {
+        display: block;
+        margin: 0;
+        padding: 0;
     }
 
     #menu {
@@ -542,6 +550,11 @@ p {
     }
 
     /*Vi tilpasser landingpage til web*/
+    #landingHeader #logoTopDesktop {
+        width: 45%;
+        padding: 40px 30px 20px;
+    }
+
     #landingMain {
         background-image: none;
     }
