@@ -372,9 +372,8 @@ p {
     flex-direction: column;
 }
 
-#shopImage{
+#shopImage {
     display: none;
-    
 }
 
 #shopbaggrund {
@@ -455,13 +454,12 @@ p {
         padding-left: 70px;
         padding-right: 70px;
     }
-    
+
     /*Vi tilpasser contact til tablet*/
-    
-    #form{
+
+    #form {
         width: 300px;
     }
-    
 }
 
 /***********************************************/
@@ -587,29 +585,26 @@ p {
     #form {
     }
 
-
-/*vi tilpasser shop til web*/
+    /*vi tilpasser shop til web*/
 
     #shopImage {
         display: block;
         width: 38%;
-        
-        
     }
 
     #div2 {
-        width: 40%; 
+        width: 40%;
         background-color: white;
-        border: none; 
+        border: none;
     }
-        
+
     #shopbaggrund {
         background-image: none;
         justify-content: space-around;
         align-items: flex-start;
         max-width: 1200px;
         width: 70%;
-    }   
+    }
 
     #shopmain {
         align-items: center;
