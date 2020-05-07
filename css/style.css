@@ -224,7 +224,7 @@ label {
 
 #landingMain {
     /*Bagrundsbilledet ligges ind*/
-    background-image: url(/images/mobilForside.JPG);
+    background-image: url(/images/mobilForsidepr%C3%B8ve.jpg);
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -582,15 +582,15 @@ p {
     }
 
     #landing1 {
-        background-image: url(/images/forside1.JPG);
+        background-image: url(/images/forside1prov.jpg);
     }
 
     #landing2 {
-        background-image: url(/images/mobilForside.JPG);
+        background-image: url(/images/mobilForsidepr%C3%B8ve.jpg);
     }
 
     #landing3 {
-        background-image: url(/images/Landing3.png);
+        background-image: url(/images/Landing3prov.jpg);
     }
 
     #landingMain .subpages a {
