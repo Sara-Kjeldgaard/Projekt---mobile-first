@@ -372,6 +372,11 @@ p {
     flex-direction: column;
 }
 
+#shopImage{
+    display: none;
+    
+}
+
 #shopbaggrund {
     background-image: url(/images/shop.JPG);
     background-size: cover;
@@ -581,19 +586,24 @@ p {
 
     #form {
     }
-}
+
 
 /*vi tilpasser shop til web*/
 
-    #shopimage {
+    #shopImage {
         display: block;
-        width: 40%;
+        width: 38%;
+        
+        
     }
 
-    #div {
+    #div2 {
+        width: 40%; 
+        background-color: white;
+        border: none; 
     }
         
-    #shopBackground {
+    #shopbaggrund {
         background-image: none;
         justify-content: space-around;
         align-items: flex-start;
@@ -604,3 +614,4 @@ p {
     #shopmain {
         align-items: center;
     }
+}
